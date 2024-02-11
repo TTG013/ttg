@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(50, 50, 50);
+    color: rgb(224, 224, 224);
+}
+.home img{
+    width: 70%;
+    border-radius: 5%;
+    margin: 0 auto;
+    display: block;
+}
+.home p,h1,h2,h3{
+    padding: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header{
+    background-color: rgb(46,73,58);
+    text-align: center;
+}
+header img{
+    height: 60px;
+}
+.social img{
+    height: 60px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("marin.png");
+  
+    /* Set a specific height */
+    min-height: 900px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(26, 26, 26);
+    justify-items: center;
+    margin-top: 6em;
+    padding: 2em;
+}
+
+.social{
+    margin:  0  auto;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.thumbnail{
+    filter:blur(3px)
+}
+.thumbnail:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out, filter 0.5s ease-out;
+    filter: blur(0px);
+}
+
+.logo{
+    filter: invert(100%);
+}
+
+header:hover{
+    .logo{
+        filter: invert(0);
+    }
+    transform: scale(1.2);
+    transition: 1.5s;
+    background-color: white;
+}
+.thumbnail {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    filter: blur(0px);
+}
